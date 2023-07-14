@@ -20,13 +20,13 @@ class Employee: #build class
 
 # Build object
 # Employee() call  Constructor
-opj1 = Employee("Non",50000,"Accounting")
-opj1.salary = 70000 # Change Attribute
-opj1.showData()
+obj1 = Employee("Non",50000,"Accounting")
+obj1.salary = 70000 # Change Attribute
+obj1.showData()
 
-opj2 = Employee("Mon",120,"Duck")
-opj2.salary = "Zon"
-opj2.showData()
+obj2 = Employee("Mon",120,"Duck")
+obj2.salary = "Zon"
+obj2.showData()
 
-opj3 = Employee("Nono",100000,"Ceo")
-opj3.showData()
+obj3 = Employee("Nono",100000,"Ceo")
+obj3.showData()

@@ -13,14 +13,14 @@ class Employee: #build class
         print(f"Department : {self.department}")
 
 # Build object
-opj1 = Employee()
-opj1.detail("Non",50000,"Accounting")
-opj1.showData()
+obj1 = Employee()
+obj1.detail("Non",50000,"Accounting")
+obj1.showData()
 
-opj2 = Employee()
-opj2.detail("Mon",120,"Duck")
-opj2.showData()
+obj2 = Employee()
+obj2.detail("Mon",120,"Duck")
+obj2.showData()
 
-opj3 = Employee()
-opj3.detail("Nono",100000,"Ceo")
-opj3.showData()
+obj3 = Employee()
+obj3.detail("Nono",100000,"Ceo")
+obj3.showData()

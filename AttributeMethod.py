@@ -9,5 +9,5 @@ class Employee: #build class
         print("Salary : {}".format(self.salary))
 
 # Build object
-opj1 = Employee()
-opj1.detail()
+obj1 = Employee()
+obj1.detail()

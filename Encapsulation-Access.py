@@ -5,16 +5,20 @@
 class Employee: #Public
 
     def __init__(self,name,salary,department): 
-        #public attribute
-        self.name = name
-        self.salary = salary
-        self.department = department
+    #Private attribute
+        self._name = name #Protected
+        self.__salary = salary #Private
+        self.__department = department #Private
+        self.__showData()
 
-    #public method
-    def showData(self):
-        print(f"Name : {self.name}")
-        print("Salary : {}".format(self.salary))
-        print(f"Department : {self.department}")
+    #Private method
+    def __showData(self):
+        print(f"Name : {self._name}")
+        print("Salary : {}".format(self.__salary))
+        print(f"Department : {self.__department}")
+
 
 obj1 = Employee("Non",50000,"Accounting")
-obj1.showData
+obj1._name = "Nini"
+obj1.__salary = 100
+# obj1.__showData()

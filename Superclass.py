@@ -17,26 +17,23 @@ class Employee:
         print(f"Department : {self._department}")
 
 class Accounting(Employee):
-    __departmentName = "Account"
-    def __init__(self):
-        pass
+    __departmentName = "Accounting"
+    def __init__(self,name,salary):
+        super().__init__(name,salary,self.__departmentName)
+        super()._showData()
 
 class Programmer(Employee):
     __departmentName = "Programmer"
-    def __init__(self):
-        pass
+    def __init__(self,name,salary):
+        super().__init__(name,salary,self.__departmentName)
+        super()._showData()
 
 class Sale(Employee):
     __departmentName = "Sale"
-    Salary = 20000
-    def __init__(self):
-        pass
+    def __init__(self,name,salary):
+        super().__init__(name,salary,self.__departmentName)
+        super()._showData()
 
-
-
-account = Accounting()
-print(account.companyName)
-programmer = Programmer()
-print(programmer.maxSalary)
-sale = Sale()
-print(sale.Salary)
+account = Accounting("Non",35000)
+programmer = Programmer("Nini",50000)
+sale = Sale("NorNor",12000)
